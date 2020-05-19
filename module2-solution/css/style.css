@@ -17,7 +17,7 @@ main div {
 	position: relative;
 	float: left;
 	margin-left: 2%;
-	border: 2px solid #000;
+	border: 1px solid #000;
 	box-sizing: border-box;
 }
 
@@ -29,8 +29,8 @@ div span {
 	text-align: center;
 	font-size: 1.2em;
 	font-weight: bold;
-	border-left: 2px solid #000;
-	border-bottom: 2px solid #000;
+	border-left: 1px solid #000;
+	border-bottom: 1px solid #000;
 }
 
 p {
