@@ -6,12 +6,12 @@ h1 {
 	text-align: center;
 }
 
-main {
+#row {
 	width: 90%;
 	margin: 0 auto;
 }
 
-main div {
+#col {
 	width: 30%;
 	background-color: #adad85;
 	position: relative;
@@ -21,13 +21,25 @@ main div {
 	box-sizing: border-box;
 }
 
-div span {
+#col:nth-child(1) span {
+	background-color: #e600ac;
+}
+
+#col:nth-child(2) span {
+	background-color: #e60000;
+}
+
+#col:nth-child(3) span {
+	background-color: #e6b800;
+}
+
+#col span {
 	position: absolute;
 	margin-top: 0;
 	right: 0;
-	padding: 4px;
+	padding: 4px 18px;
 	text-align: center;
-	font-size: 1.2em;
+	font-size: 1.5em;
 	font-weight: bold;
 	border-left: 1px solid #000;
 	border-bottom: 1px solid #000;
@@ -35,44 +47,30 @@ div span {
 
 p {
 	margin-top: 36px;
-	padding: 5px;
-}
-
-#col1 span {
-	background-color: #e600ac;
-}
-
-#col2 span {
-	background-color: #e60000;
-}
-
-#col3 span {
-	background-color: #e6b800;
+	padding: 8px;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-	#col1, #col2 {
-		width: 45%;
+	#col:nth-child(1), #col:nth-child(2) {
+		width: 47%;
 	}
 
-	#col3 {
-		width: 92%;
-		margin-top: 20px;
+	#col:nth-child(3) {
+		width: 96%;
+		margin-top: 1em;
 	}
 }
 
 @media (max-device-width: 768px) {
-	#col1, #col2, #col3 {
+	#row > #col {
 		width: 100%;
-		margin-top: 20px;
-		margin-left: 0;
+		margin-top: 1em;
 	}
 }
 
 @media (max-width: 768px) {
-	#col1, #col2, #col3 {
+	#row > #col {
 		width: 100%;
-		margin-top: 20px;
-		margin-left: 0;
+		margin-top: 1em;
 	}
 }
